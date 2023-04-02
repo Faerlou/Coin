@@ -39,16 +39,18 @@
 <body>
  
 <a href="rub.jpg" download="">
-    <a-entity  background = "color: #ECECEC">
-    <a-gltf-model src = "coin.gltf"
-           position="-1 1 2"
-           rotation="0 45 0"></a-gltf-model>
-    </a-entity>
+
+     <a-asset-item id="coin"
+      src="coin.gltf"
+      response-type="arraybuffer" crossorigin="anonymous"></a-asset-item>
+    
+    <a href="https://faerlou.github.io/ARGo/">
+    <div><button class="button2">назад</button></div>
+    </a>
+
 </a>
     
-<a href="https://faerlou.github.io/ARGo/">
-    <div><button class="button2">назад</button></div>
-</a>  
+  
      
 </body>
 </html>
