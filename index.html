@@ -13,8 +13,30 @@
   <script src="model-viewer.js"></script>
   <script src="background-gradient.js"></script>
 </head>
+ <style>
+    .container {
+     position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    padding-left: 1px;
+    padding-right: 1px;
+    font-size: 16px;
+}
+     .btn {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #8b95e7;
+    border-radius: 2px;
+    color: white; /* White text */
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 16px;
+}
+   </style>
 <body>
-
 <a-scene
   renderer="colorManagement: true;"
   info-message="htmlSrc: #messageText"
@@ -39,5 +61,7 @@
     <a-asset-item id="messageText" src="message.html"></a-asset-item>
   </a-assets>
 </a-scene>
+   <div class="container">
+    <form action="https://faerlou.github.io/ARGo/"><button class="btn">ВЫХОД</button></form></div>
 </body>
 </html>
